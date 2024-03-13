@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "Tutorial.sln",
+    "godot.csharp.executablePath": "/Users/ericf/Downloads/Godot_mono.app/Contents/MacOS/Godot"
+}

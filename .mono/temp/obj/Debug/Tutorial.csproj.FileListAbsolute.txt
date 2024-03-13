@@ -1,0 +1,8 @@
+/Users/ericf/code/games/godot/tutorial/.mono/temp/bin/Debug/Tutorial.dll
+/Users/ericf/code/games/godot/tutorial/.mono/temp/bin/Debug/Tutorial.pdb
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.csproj.AssemblyReference.cache
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.AssemblyInfoInputs.cache
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.AssemblyInfo.cs
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.csproj.CoreCompileInputs.cache
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.dll
+/Users/ericf/code/games/godot/tutorial/.mono/temp/obj/Debug/Tutorial.pdb
