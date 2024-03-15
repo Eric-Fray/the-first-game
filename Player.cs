@@ -20,7 +20,7 @@ public partial class Player : Area2D
         Position = position;
         Show();
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
-    }
+    } 
 
     private void OnPlayerBodyEntered(Node2D body)
     {
