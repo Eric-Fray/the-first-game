@@ -12,6 +12,8 @@ public partial class Main : Node
     {
         GetNode<Timer>("MobTimer").Stop();
         GetNode<Timer>("ScoreTimer").Stop();
+        
+        GetNode<HUD>("HUD").ShowGameOver();
     }
     public void NewGame()
     {
@@ -22,6 +24,10 @@ public partial class Main : Node
         player.Start(startPosition.Position);
         
         GetNode<Timer>("StartTimer").Start();
+
+        var hud = GetNode<HUD>("HUD");
+        hud.UpdateScore(0);
+        hud.ShowMessage("Get Ready!");
     }
 
     private void onScoreTimerTimeout()
@@ -37,9 +43,6 @@ public partial class Main : Node
 
     private void OnMobTimerTimeout()
     {
-        // Note: Normally it is best to use explicit types rather than the `var`
-        // keyword. However, var is acceptable to use here because the types are
-        // obviously Mob and PathFollow2D, since they appear later on the line.
 
         // Create a new instance of the Mob scene.
 
@@ -69,7 +72,7 @@ public partial class Main : Node
     
     public override void _Ready()
     {
-        NewGame();
+        //NewGame();
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.

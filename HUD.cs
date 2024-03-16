@@ -1,6 +1,4 @@
 using Godot;
-using System;
-using System.Threading;
 using Timer = Godot.Timer;
 
 public partial class HUD : CanvasLayer
