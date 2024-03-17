@@ -74,6 +74,8 @@ public partial class Main : Node
     public override void _Ready()
     {
         NewGame();
+
+        GetTree().CallGroup("mobs", "QueueFree");
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
