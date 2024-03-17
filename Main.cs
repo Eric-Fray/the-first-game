@@ -10,6 +10,8 @@ public partial class Main : Node
 
     public void GameOver()
     {
+        GetNode<AudioStreamPlayer>("Music").Stop();
+        GetNode<AudioStreamPlayer>("DeathSound").Play();
         GetNode<Timer>("MobTimer").Stop();
         GetNode<Timer>("ScoreTimer").Stop();
         
@@ -18,6 +20,8 @@ public partial class Main : Node
     public void NewGame()
     {
         _score = 0;
+        GetNode<AudioStreamPlayer>("Music").Play();
+        GetTree().CallGroup("mobs", "QueueFree");
 
         var player = GetNode<Player>("Player");
         var startPosition = GetNode<Position2D>("StartPosition");
@@ -71,12 +75,10 @@ public partial class Main : Node
         AddChild(mob);
     }
     
-    public override void _Ready()
-    {
-        NewGame();
-
-        GetTree().CallGroup("mobs", "QueueFree");
-    }
+    // public override void _Ready()
+    // {
+    //     //NewGame();
+    // }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
 //  public override void _Process(float delta)
