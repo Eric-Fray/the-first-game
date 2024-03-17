@@ -33,6 +33,7 @@ public partial class Main : Node
     private void onScoreTimerTimeout()
     {
         _score++;
+        GetNode<HUD>("HUD").UpdateScore(_score);
     }
 
     private void OnStartTimerTimeOut()
@@ -72,7 +73,7 @@ public partial class Main : Node
     
     public override void _Ready()
     {
-        //NewGame();
+        NewGame();
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
